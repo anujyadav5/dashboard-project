@@ -53,22 +53,26 @@ button, input {
 .projects {
     grid-row: 1 / -1;
     display: grid;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 30px 1fr;
+    padding-right: 16px;
 }
 
-h4 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 }
 
 .cards {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    gap: 12px;
+    gap: 20px;
+    color: rgb(0, 0, 0, .7);
 }
 
 .card {
-    background-color: beige;
-    padding: 2px;
+    background-color: rgb(245, 245, 235);
+    border-left: 6px solid rgb(0, 128, 128);
+    border-radius: 5px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,4 +80,28 @@ h4 {
 
 .icons {
     text-align: end;
+}
+
+.announcements-container, .trending-container {
+    background-color: rgb(245, 245, 235);
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 5px;
+    display: grid;
+    gap: 10px;
+    color: rgb(0, 0, 0, .7);
+}
+
+
+.announcement {
+    border-bottom: 2px solid rgb(0, 128, 128, .5);
+    padding-bottom: 10px;
+}
+
+.trending-container .item {
+    text-align: center;
+}
+
+.user, h4, h5 {
+    color: rgb(0, 0, 0, 1);
 }
