@@ -4,21 +4,45 @@ html, body {
     height: 100%;
 }
 
+button, input {
+    padding: 0px;
+} 
+
 .container {
     height: 100%;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 5fr;
+    grid-template: 1fr 5fr / 1fr 5fr;
 }
 
 .header {
     grid-column: 2 / -1;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    padding: 24px;
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: lightslategray;
     grid-row: 1 / -1;
+    color: azure;
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+    justify-content: center;
 }
 
 .main {
-    background-color: bisque;
+    background-color: darkgray;
+}
+
+.profile, .options {
+    text-align: end;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    flex: 1;
+    height: 20px;
 }
