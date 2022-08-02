@@ -1,4 +1,5 @@
 html, body {
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -11,23 +12,91 @@ button, input {
 .container {
     height: 100%;
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 1fr 5fr / 1fr 4fr;
 }
 
 .header {
     grid-column: 2 / -1;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    padding: 24px;
+    padding: 16px 16px 0px 24px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.search, .profile, .options, .welcome {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.welcome {
+    font-size: 12px;
+}
+
+.welcome p {
+    font-size: 24px;
+}
+
+
+.profile {
+    justify-content: end;
+}
+
+.options {
+    justify-content: space-between;
+}
+
+.search input {
+    flex: 1;
+    height: 28px;
+    font-size: 14px;
+    padding-left: 8px;
+    border: none;
+    background-color: rgb(0, 0, 0, .1);
+    border-radius: 8px;
 }
 
 .sidebar {
-    background-color: lightslategray;
+    background-color: rgb(0, 128, 128);
     grid-row: 1 / -1;
-    color: azure;
+    color: rgb(245, 245, 235);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 70px;
+    padding: 24px 16px 0px 32px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tabs {
     display: grid;
-    grid-template-rows: 1fr 3fr 5fr;
-    justify-content: center;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.tabs div, .help div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.help {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.sidebar a {
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
 }
 
 .main {
@@ -35,20 +104,9 @@ button, input {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     padding: 16px;
+    row-gap: 8px;
 }
 
-.profile, .options {
-    text-align: end;
-}
-
-.search {
-    display: flex;
-}
-
-.search input {
-    flex: 1;
-    height: 20px;
-}
 
 .projects {
     grid-row: 1 / -1;
@@ -63,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .cards {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     color: rgb(0, 0, 0, .7);
 }
@@ -72,10 +130,12 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgb(245, 245, 235);
     border-left: 6px solid rgb(0, 128, 128);
     border-radius: 5px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    box-shadow: 2px 2px 5px gray;
+    padding: 8px 8px 5px 16px;
+    height: 70%;
+    display: grid;
+    grid-template-rows: 1fr 30px;
+    align-items: center;
 }
 
 .icons {
@@ -87,6 +147,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 16px;
     margin-top: 8px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
     display: grid;
     gap: 10px;
     color: rgb(0, 0, 0, .7);
@@ -100,8 +161,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 .trending-container .item {
     text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .user, h4, h5 {
     color: rgb(0, 0, 0, 1);
 }
+
+button {
+    color: rgb(245, 245, 235);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 128, 128);
+    width: 100px;
+    height: 28px;
+}
+

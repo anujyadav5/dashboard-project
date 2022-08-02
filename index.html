@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -22,9 +25,11 @@
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
                 </svg>
+                <img src="https://img.icons8.com/clouds/50/000000/piano.png"/>
                 <strong>Frank Sinatra</strong>
             </div>
             <div class="welcome">
+                <img src="https://img.icons8.com/clouds/70/000000/piano.png"/>
                 <h3>Hi there, <p>Frank Sinatra (@frank)</p></h3>
             </div>
             <div class="options">
@@ -36,13 +41,19 @@
         </div>
 
         <div class="sidebar">
-            <h1>Dashboard</h1>
+            <div class="dashboard">
+                <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                </svg>
+                <h1>Dashboard</h1>
+            </div>
 
             <div class="tabs">
                 <div class="home"> 
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
-                    </svg> Home
+                    </svg>
+                    Home
                 </div>
                 <div class="profile-tab"> 
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -95,8 +106,10 @@
                     </svg>
                     Privacy
                 </div>
+                
             </div>
-
+            
+            <a target="_blank" href="https://icons8.com/icon/set/music/clouds">Cloud icons by Icons8</a>
         </div>
 
         <div class="main">
@@ -105,8 +118,10 @@
                     <h3>Your Albums</h3>
                     <div class="cards">
                         <div class="card">
-                            <h4>Swing Easy</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione?
+                            <div class="card-content">
+                                <h4>Swing Easy</h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione?
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -120,8 +135,10 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h4>In the Wee Small Hours</h4>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat exercitationem commodi itaque accusantium iure asperiores fugiat harum dignissimos, deleniti placeat.
+                            <div class="card-content">
+                                <h4>In the Wee Small Hours</h4>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat exercitationem commodi itaque accusantium iure asperiores fugiat harum dignissimos, deleniti placeat.
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -135,8 +152,10 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h4>Songs for Swingin' Lovers</h4>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat impedit quae expedita?
+                            <div class="card-content">
+                                <h4>Songs for Swingin' Lovers</h4>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat impedit quae expedita?
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -150,8 +169,10 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h4>A Jolly Christmas from Frank Sinatra</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptate!
+                            <div class="card-content">
+                                <h4>A Jolly Christmas from Frank Sinatra</h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptate!
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -165,8 +186,10 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h4>Only the Lonely</h4>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A natus vel culpa sit minima eum?
+                            <div class="card-content">
+                                <h4>Only the Lonely</h4>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A natus vel culpa sit minima eum?
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -180,8 +203,10 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h4>Man and His Music</h4>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex vel! Vel rem at tempore ipsa architecto.
+                            <div class="card-content">
+                                <h4>Man and His Music</h4>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex vel! Vel rem at tempore ipsa architecto.
+                            </div>
                             <div class="icons">
                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
@@ -217,20 +242,32 @@
                     <h3>Trending</h3>
                     <div class="trending-container">
                         <div class="item">
-                            <div class="user">@nancysinatra</div>
-                            Lorem, ipsum dolor.
+                            <img src="https://img.icons8.com/clouds/50/000000/earbud-headphones.png"/>
+                            <div>
+                                <div class="user">@nancysinatra</div>
+                                Lorem, ipsum dolor.
+                            </div>
                         </div>
                         <div class="item">
-                            <div class="user">@paulanka</div>
-                            Lorem, ipsum.
+                            <img src="https://img.icons8.com/clouds/50/000000/microphone.png"/>
+                            <div>
+                                <div class="user">@paulanka</div>
+                                Lorem, ipsum.
+                            </div>
                         </div>
                         <div class="item">
-                            <div class="user">@someone</div>
-                            Lorem, ipsum.
+                            <img src="https://img.icons8.com/clouds/50/000000/piano.png"/>
+                            <div>
+                                <div class="user">@frank</div>
+                                Lorem, ipsum.
+                            </div>
                         </div>
                         <div class="item">
-                            <div class="user">@someone</div>
-                            Lorem, ipsum dolor.
+                            <img src="https://img.icons8.com/clouds/50/000000/eight-rest.png"/>
+                            <div>
+                                <div class="user">@someone</div>
+                                Lorem, ipsum dolor.
+                            </div>
                         </div>
                     </div>
                 </div>
